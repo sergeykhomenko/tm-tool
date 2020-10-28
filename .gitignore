@@ -1,0 +1,16 @@
+database_postgres/
+
+
+# IDE files, system files
+.DS_Store
+.idea/
+
+# Enviroment files
+.env
+
+# Binaries
+tm-tool
+service-*/service-*
+
+# Generated files
+service-*/proto/*/*.pb.go

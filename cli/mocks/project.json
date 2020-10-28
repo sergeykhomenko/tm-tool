@@ -1,0 +1,13 @@
+{
+  "title": "My test project",
+  "description": "project description",
+  "tickets": [
+    {
+      "title": "Sample task",
+      "description": "Task descripiton",
+      "creationDate": "Today",
+      "author": "Serhii Khomenko",
+      "assigned": ""
+    }
+  ]
+}

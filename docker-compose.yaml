@@ -1,0 +1,32 @@
+version: '3.5'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: example
+    volumes:
+      - database_postgres:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - '8001:8080'
+
+  micro_projects:
+    build: ./service-project
+    depends_on:
+      - db
+    ports:
+      - '50051:50051'
+    environment:
+      MICRO_SERVER_ADDRESS: ':50051'
+    links:
+      - db
+
+volumes:
+  database_postgres:

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package message;
+
+service MessageService {
+  rpc GetMessages(GetRequest) returns (Response) {}
+  rpc CreateMessage(Message) returns (Response) {}
+}
+
+message Message {
+  int64 ticketId = 1;
+  int64 author = 2;
+  string content = 3;
+}
+
+message GetRequest {
+  int64 ticketId = 1;
+}
+
+message Response {
+  bool created = 1;
+  Message message = 2;
+
+  repeated Message messages = 3;
+}

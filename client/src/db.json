@@ -1,0 +1,47 @@
+{
+  "projects": [{
+    "title": "My test project",
+    "priority": "high",
+    "description": "project description",
+    "tickets": [
+      {
+        "title": "Sample task",
+        "description": "Task descripiton",
+        "creationDate": "Today",
+        "author": "Serhii Khomenko",
+        "assigned": ""
+      },
+      {
+        "title": "Remove sample task",
+        "description": "Task descripiton",
+        "creationDate": "Today",
+        "author": "Someone else",
+        "assigned": "Serhii Khomenko",
+        "messages": [
+          {
+            "author": "Serhii Khomenko",
+            "content": "Are you sure?"
+          }, {
+            "author": "Someone else",
+            "content": "Definitely"
+          }, {
+            "author": "Someone else too",
+            "content": "I am not sure, but who cares?"
+          }
+        ]
+      }
+    ]
+  }, {
+    "title": "My second project",
+    "description": "no description",
+    "tickets": [
+      {
+        "title": "Task",
+        "description": "Descripiton",
+        "creationDate": "Yesterday",
+        "author": "Serhii Khomenko",
+        "assigned": ""
+      }
+    ]
+  }]
+}

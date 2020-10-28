@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+html {
+  font-size: 8px;
+}
+
+body {
+  padding: 40px 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  border: 1px solid #eeeeee;
+  position: relative;
+  padding: 0 80px;
+}
+
+.title {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 6rem;
+  color: #2798F7;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 3.5rem;
+
+  display: block;
+  width: 100%;
+  border: none;
+
+  margin-bottom: 40px;
+}
+
+.back {
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: #B0BEC5;
+  margin-bottom: 4rem;
+}
+
+.ticket {
+  color: #78909D;
+  font-weight: 500;
+
+  &__title {
+    display: block;
+    font-size: 3.125rem;
+    margin-bottom: 10px;
+  }
+
+  &__tags {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+  }
+}
+
+.fab {
+  background: #2798F7;
+  border-radius: 50%;
+
+  display: block;
+  width: 70px;
+  height: 70px;
+
+  font-size: 6rem;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.form {
+  &__content {
+    @extend .description;
+    font-size: 6.25rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background: #2798F7;
+  border: none;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 10px 40px;
+
+  &:focus {
+    outline: none;
+  }
+}
