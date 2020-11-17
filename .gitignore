@@ -11,6 +11,7 @@ database_postgres/
 # Binaries
 tm-tool
 service-*/service-*
+cli/cli
 
 # Generated files
 service-*/proto/*/*.pb.go
